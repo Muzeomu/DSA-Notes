@@ -43,6 +43,29 @@ Data type which are used to solve real life problems where user is only aware ab
     * Average - O(nlogn)
     * Worst - O(nlogn)
 
+### Insertion Sort Algorithm:
+* Step 1: Start with the second element in the array (consider the first element as a sorted sub-array of one element).
+* Step 2: Compare the current element with the elements in the sorted sub-array (left side) and find its correct position.
+* Step 3: Shift all larger elements one position to the right to make space for the current element.
+* Step 4: Insert the element into its correct position in the sorted sub-array.
+* Step 5: Move to the next element and repeat the process until the entire array is sorted.
+
+### Quick Sort Algorithm:
+* Step 1: Choose a pivot element (can be the first, last, or middle element, or chosen randomly).
+* Step 2: Partition the array: Rearrange the elements so that all elements smaller than the pivot are on its left and all elements larger than the pivot are on its right.
+* Step 3: Recursively apply the partitioning to the sub-arrays on the left and right of the pivot.
+* Step 4: Base case: If the sub-array has one or zero elements, it is already sorted.
+* Step 5: Continue the recursive process until all sub-arrays are sorted, and the full array is sorted.
+
+###  Merge Sort Algorithm:
+* Step 1: Divide the array into two halves until each sub-array contains only a single element (i.e., divide recursively).
+* Step 2: Once the sub-arrays contain a single element, start merging them back.
+* Step 3: During the merge process, combine the sub-arrays by comparing their elements and sorting them in order.
+* Step 4: Continue merging and sorting the sub-arrays until the entire array is sorted.
+* Step 5: The array is now fully sorted after all sub-arrays have been merged.
+
+
+
 ### Static Memory Allocation
 * Memory is allocated at compile time and cannot be changed during runtime.
 * The size of memory is fixed once the program starts.
