@@ -1,9 +1,9 @@
 # DSA Notes
 
 ## Stacks 
-Stack overflow
+* Stack overflow:
 The condition resulting from trying to push an element onto a full stack.
-Stack underflow
+* Stack underflow:
 The condition resulting from trying to pop an empty stack.
 
 
