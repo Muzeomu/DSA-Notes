@@ -1,6 +1,67 @@
 # DSA Notes
 
-## Stacks 
+## Unit -1 Introduction
+
+### ADT - Abstract data type 
+Data type which are used to solve real life problems where user is only aware about the options or operations available to use and unaware about how those operations are taking place.
+
+### Asymptotic Notations
+
+* Asymptotic Notations are mathematical representation used to describe the time complexity (or space complexity) of an algorithm
+
+* Types of Asymptotic Notations
+1. Big O Notation (O): Describes the worst-case time complexity.
+2. Big Omega Notation (Ω): Describes the best-case time complexity.
+3. Theta Notation (Θ): Describes the average-case or tight bound time complexity.
+
+### Types of Data Structures
+
+* Primitive DS - int, float, char, pointer
+
+1. Linear Data Structures:
+    * Arrays
+    * Linked Lists 
+    * Stacks
+    * Queues 
+
+2. Non-Linear Data Structures:
+    * Trees
+    * Graphs 
+
+### Sorting Algorithms
+
+1. Insertion Sort
+    * Best -  O(n)
+    * Average - O(n^2)
+    * Worst - O(n^2)
+2. Quick sort
+    * Best -  O(nlogn)
+    * Average - O(nlogn)
+    * Worst - O(n^2)
+3. Merge sort
+    * Best -  O(nlogn)
+    * Average - O(nlogn)
+    * Worst - O(nlogn)
+
+### Static Memory Allocation
+* Memory is allocated at compile time and cannot be changed during runtime.
+* The size of memory is fixed once the program starts.
+* The memory is allocated on the stack.
+
+### Dynamic Memory Allocation
+* Memory is allocated at runtime using dynamic memory functions.
+* The size of memory can be changed during execution.
+* The memory is allocated on the heap.
+* More flexible as you can allocate memory as needed, but it's less efficient than static allocation due to manual management.
+
+### Functions
+* malloc() -  allocates a block of memory of a given size at runtime, but the memory is uninitialized, meaning it contains garbage values. 
+* calloc() - also allocates memory but initializes all elements to zero, making it ideal for arrays. 
+* realloc() - is used to resize a previously allocated memory block, either expanding or shrinking the memory while preserving the existing data. 
+* free() - releases the memory previously allocated with malloc(), calloc(), or realloc() to avoid memory leaks.
+
+
+## Unit -3 Stacks 
 
 1. In the array implementation of a stack, a fixed-size array is used to hold the stack elements. The stack follows the LIFO (Last In, First Out) principle, meaning that the last element added to the stack is the first one to be removed.
 
