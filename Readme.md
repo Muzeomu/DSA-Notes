@@ -1,20 +1,29 @@
 # DSA Notes
 
 ## Stacks 
+
+1. In the array implementation of a stack, a fixed-size array is used to hold the stack elements. The stack follows the LIFO (Last In, First Out) principle, meaning that the last element added to the stack is the first one to be removed.
+
+2. Components of Array-Based Stack:
+* Array: The stack is represented using an array of a fixed size. This array will store the stack elements.
+* Top Pointer: A variable, often called top, is used to keep track of the index of the top element in the stack.
+Initially, the top is set to -1, indicating the stack is empty.
+
+### Overflow and Underflow
 * Stack overflow:
 The condition resulting from trying to push an element onto a full stack.
 * Stack underflow:
 The condition resulting from trying to pop an empty stack.
 
 
-### Algorithm to Push()
+## Algorithm to Push()
 * Step 1 − Checks if the stack is full.
 * Step 2 − If the stack is full, produces an error and exit.
 * Step 3 − If the stack is not full, increments top to point next empty space.
 * Step 4 − Adds data element to the stack location, where top is pointing.
 * Step 5 − Returns success.
 
-### Algorithm to Pop()
+## Algorithm to Pop()
 * Step 1 − Checks if the stack is empty.
 * Step 2 − If the stack is empty, produces an error and exit.
 * Step 3 − If the stack is not empty, accesses the data element at which top is
@@ -83,7 +92,7 @@ int main(){
     return 0;
 }
 ```
-### Algorithm for infix to postfix
+## Algorithm for infix to postfix
 
 1. Initialize an empty stack for operators and an empty string for the postfix expression.
 2. Scan the infix expression from left to right:
