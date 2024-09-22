@@ -10,9 +10,9 @@ Data type which are used to solve real life problems where user is only aware ab
 * Asymptotic Notations are mathematical representation used to describe the time complexity (or space complexity) of an algorithm
 
 * Types of Asymptotic Notations
-1. Big O Notation (O): Describes the worst-case time complexity.
-2. Big Omega Notation (Ω): Describes the best-case time complexity.
-3. Theta Notation (Θ): Describes the average-case or tight bound time complexity.
+    1. Big O Notation (O): Describes the worst-case time complexity.
+    2. Big Omega Notation (Ω): Describes the best-case time complexity.
+    3. Theta Notation (Θ): Describes the average-case or tight bound time complexity.
 
 ### Types of Data Structures
 
