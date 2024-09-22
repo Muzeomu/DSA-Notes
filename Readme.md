@@ -84,6 +84,88 @@ Data type which are used to solve real life problems where user is only aware ab
 * free() - releases the memory previously allocated with malloc(), calloc(), or realloc() to avoid memory leaks.
 
 
+## Unit -2 Linked List
+* A linked list is a linear data structure that consists of a series of nodes connected by pointers
+* Each node contains data and a pointer to the next node in the list. 
+* Time complexity O(n) at begining ans O(n) at any position
+* Searching, reversing O(n)
+
+![](https://media.geeksforgeeks.org/wp-content/uploads/20220712172013/Singlelinkedlist.png)
+
+### Algorithm to create and traverse node
+
+1. Step 1: Define a struct node with:
+    * data: to store the value of the node.
+    * link: a pointer to the next node in the list
+
+2. Step 2: In the main() function:
+    * Allocate memory for n nodes using malloc().
+
+3. Step 3: For each node, starting from the first:
+    * Assign a value to the node’s data field.
+    * Set the node’s link pointer to point to the next node (if it exists).
+
+4. Step 4: For the last node:
+    * Assign its link pointer to NULL to mark the end of the linked list.
+
+5. Step 5: Traverse the linked list:
+    * Start from the head node.
+    * While the current node is not NULL, print the data of the current node.
+    * Move to the next node by setting the current node to its link.
+
+6. Step 6: Continue traversing until all nodes are visited and printed, then terminate the program.
+
+```c
+#include<stdio.h>
+#include<stdlib.h>
+
+struct node{
+    int data;
+    struct node *link;
+};
+
+int main(){
+    // Allocate memory for three nodes in the linked list
+    struct node *head = malloc(sizeof(struct node));
+    struct node *second = malloc(sizeof(struct node));
+    struct node *third = malloc(sizeof(struct node));
+
+    // Assign data to the first node and link it to the second node
+    head->data = 45;
+    head->link = second;
+
+    // Assign data to the second node and link it to the third node
+    second->data = 98;
+    second->link = third; 
+
+    // Assign data to the third node and terminate the list by setting the next to NULL
+    third->data = 3;
+    third->link = NULL;
+
+    // Traverse the linked list and print the data of each node
+    struct node* current = head;
+    while (current != NULL) {
+        printf("Node data: %d\n", current->data);
+        current = current->link;
+    }
+
+    return 0;
+}
+```
+
+### Insert at Beginning:
+* Set the new node’s link to point to the current head.
+* Update the head to point to the new node.
+
+### Insert at End:
+* Traverse the linked list until you find the last node (where link is NULL).
+* Set the last node’s link to point to the new node.
+
+### Insert at a Specific Position:
+* Traverse to the node just before the desired position.
+* Set the new node’s link to the link of the previous node.
+* Set the previous node’s link to point to the new node.
+
 ## Unit -3 Stacks 
 
 1. In the array implementation of a stack, a fixed-size array is used to hold the stack elements. The stack follows the LIFO (Last In, First Out) principle, meaning that the last element added to the stack is the first one to be removed.
