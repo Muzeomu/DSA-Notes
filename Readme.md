@@ -168,6 +168,8 @@ int main(){
 
 ## Doubly linked list
 
+![](https://media.geeksforgeeks.org/wp-content/uploads/20240809123741/Insertion-at-the-End-in-Doubly-Linked-List-copy.webp)
+
 * Doubly linked list is a data structure consisting of nodes, where each node contains three fields:
     1. A pointer to the previous node.
     1. A data field.
