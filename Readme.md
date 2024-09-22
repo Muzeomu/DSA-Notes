@@ -166,6 +166,39 @@ int main(){
 * Set the new node’s link to the link of the previous node.
 * Set the previous node’s link to point to the new node.
 
+## Doubly linked list
+
+* Doubly linked list is a data structure consisting of nodes, where each node contains three fields:
+    1. A pointer to the previous node.
+    1. A data field.
+    1. A pointer to the next node.
+* This allows traversal in both directions—forward and backward.
+
+### Inserting at the Beginning
+1. Create a new node.
+2. Set the new node's next pointer to the current head.
+3. Set the new node's previous pointer to NULL.
+4. If the current head is not NULL, set the current head's previous pointer to the new node.
+5. Update the head to point to the new node.
+
+### Inserting at the End
+1. Create a new node.
+2. If the list is empty, set the head to the new node.
+3. Otherwise, traverse to the last node.
+4. Set the last node's next pointer to the new node.
+5. Set the new node's previous pointer to the last node.
+
+### Inserting at a Specific Position
+1. Create a new node.
+2. If the position is 0, call the function to insert at the beginning.
+3. Otherwise, traverse to the node just before the desired position.
+4. If the current node is NULL, the position is out of bounds.
+5. Set the new node's next pointer to the current node's next pointer.
+6. Set the new node's previous pointer to the current node.
+7. If the next node is not NULL, set its previous pointer to the new node.
+8. Set the current node's next pointer to the new node.
+
+
 ## Unit -3 Stacks 
 
 1. In the array implementation of a stack, a fixed-size array is used to hold the stack elements. The stack follows the LIFO (Last In, First Out) principle, meaning that the last element added to the stack is the first one to be removed.
